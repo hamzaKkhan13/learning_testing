@@ -1,0 +1,55 @@
+{
+  "accounts": {
+    "account{0}": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+  },
+  "linkReferences": {},
+  "transactions": [
+    {
+      "timestamp": 1732253172619,
+      "record": {
+        "value": "0",
+        "inputs": "()",
+        "parameters": [],
+        "name": "",
+        "type": "constructor",
+        "abi": "0x2d6466c602aaddb564aeff3a3599855567808d6d411d2e2954442a591a13136b",
+        "contractName": "SimpleStorage",
+        "bytecode": "6080604052348015600e575f5ffd5b5060d980601a5f395ff3fe6080604052348015600e575f5ffd5b50600436106026575f3560e01c80636057361d14602a575b5f5ffd5b60406004803603810190603c9190607d565b6042565b005b805f8190555050565b5f5ffd5b5f819050919050565b605f81604f565b81146068575f5ffd5b50565b5f813590506077816058565b92915050565b5f60208284031215608f57608e604b565b5b5f609a84828501606b565b9150509291505056fea2646970667358221220eee6deb99f14bb5f294558b022c3cd8d8e496da99a50a708ddc89fc6eb05977464736f6c634300081c0033",
+        "linkReferences": {},
+        "from": "account{0}"
+      }
+    },
+    {
+      "timestamp": 1732253205581,
+      "record": {
+        "value": "0",
+        "inputs": "(uint256)",
+        "parameters": [
+          "123"
+        ],
+        "name": "store",
+        "type": "function",
+        "to": "created{1732253172619}",
+        "abi": "0x2d6466c602aaddb564aeff3a3599855567808d6d411d2e2954442a591a13136b",
+        "from": "account{0}"
+      }
+    }
+  ],
+  "abis": {
+    "0x2d6466c602aaddb564aeff3a3599855567808d6d411d2e2954442a591a13136b": [
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_favN",
+            "type": "uint256"
+          }
+        ],
+        "name": "store",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      }
+    ]
+  }
+}

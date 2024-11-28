@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "str2",
+						"type": "string"
+					}
+				],
+				"name": "compareStrings",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2_Owner.sol": "StringComparisonContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2_Owner.sol": {
+			"keccak256": "0xc6a25b53cf8906145efe135341690860d62b44b3734fe4b54c81112660b5c2f6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e2d28d3781388bc4a368c51dd49435616bc3c2869e6afc49e1aa82dd17af8b8f",
+				"dweb:/ipfs/QmV2xwstU3nhZboBDEpQzQ9hceRKb7o4KbLAKsjTkrUjHn"
+			]
+		}
+	},
+	"version": 1
+}

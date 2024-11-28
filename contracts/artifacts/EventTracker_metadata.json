@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ticketPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTicket",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ticketID",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAmount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/EventTracker.sol": "EventTracker"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/EventTracker.sol": {
+			"keccak256": "0xc220e7676552ffad422dfa24abfe4f65757ab684ccb9c4a01f6ee74bc1a4ed72",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba4c90a6ff02a469fec17e4396d8087a8ede5042758da5025d8a4f6fe794c88a",
+				"dweb:/ipfs/QmRBTDoGyj5eYChVn8k4kFaBRWtDH5YtdcDtocvyXPBrad"
+			]
+		}
+	},
+	"version": 1
+}

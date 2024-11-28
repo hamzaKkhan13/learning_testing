@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "rev",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/revertHandler.sol": "revertCheck"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/revertHandler.sol": {
+			"keccak256": "0xd16b05b7a84ee90e7daf451d2e21d3fd4afdf3454f485adedd45ca8160a03083",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5cf3bd91a7544edf5f84e1b02bfa6cf65372826202d6ed47197a1a6bbc84f52c",
+				"dweb:/ipfs/QmagVZTVVQxHa3BU4VSwWrERfLCxGKDebSWzGCMQth8eyC"
+			]
+		}
+	},
+	"version": 1
+}
