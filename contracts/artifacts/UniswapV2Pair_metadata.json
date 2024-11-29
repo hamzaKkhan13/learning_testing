@@ -7,12 +7,22 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "getReserves",
 				"outputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "uint112",
+						"name": "reserve0",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint112",
+						"name": "reserve1",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint32",
+						"name": "blockTimestampLast",
+						"type": "uint32"
 					}
 				],
 				"stateMutability": "view",
@@ -32,7 +42,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "E"
+			"contracts/Interface.sol": "UniswapV2Pair"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,12 +56,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inheritance.sol": {
-			"keccak256": "0x1fea885a74fe4a70c761961cf49c010b3dd12c9fa4d8c3e9da28a334874266c3",
+		"contracts/Interface.sol": {
+			"keccak256": "0xb8b085bf876c0cb8189706eb9dcf89843f00f5fdcc888e5bd8af3371d9e1e2cc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79b2e1df360aa75409060cade732c71235f1f3f545502564c99993d93a7f0ff4",
-				"dweb:/ipfs/QmdcPoPUzW6poCFVkXHS6LDJtxAu3rFQ4Wso1NQvdrQ3eq"
+				"bzz-raw://59cb2d402676bb8d9d785f9eee0b0e23592c3b63a19de7682f7911b838ea3ae7",
+				"dweb:/ipfs/QmUqsTkTZhcTh3zNcH7Uotce9X2Rng1WG4Q6KHUCHFJKpV"
 			]
 		}
 	},

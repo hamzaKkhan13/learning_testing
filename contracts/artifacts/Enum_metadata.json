@@ -11,28 +11,41 @@
 				"type": "constructor"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
+				"inputs": [],
+				"name": "getStatus",
+				"outputs": [
 					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "message",
-						"type": "string"
+						"internalType": "enum Enum.Status",
+						"name": "",
+						"type": "uint8"
 					}
 				],
-				"name": "Log",
-				"type": "event"
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "bar",
+				"name": "reset",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "setCancelled",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Enum.Status",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setStatus",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -51,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SuperFunction.sol": "B"
+			"contracts/Enum.sol": "Enum"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -65,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SuperFunction.sol": {
-			"keccak256": "0x56f79f2702e30f9ad8c7566ea9e918a25d4d0af441ce04cb47f5ea7fc181f9f9",
+		"contracts/Enum.sol": {
+			"keccak256": "0xfd7bd06ad46c17bb35513d37162e58315c4bfefb1f01c6fc92618ed7c7eb1d9d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e57924bdeab351a95d721e6149a6dcad06786f5603ee1e9c142a0d6c5f49d3c0",
-				"dweb:/ipfs/QmPKam36duaoweLuSTx4prr35gp8E64LH8d8sLnnDYqC58"
+				"bzz-raw://5dc7aa8eba0c43ca77a450a5a12b9a2c8d679b31d9b6534a0c068dfc5ad9c3f1",
+				"dweb:/ipfs/QmVEoKjmn9xN3aF7CEMiNwgtqfWth3aau8CbRLPHbRqXXd"
 			]
 		}
 	},

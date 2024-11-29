@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/importedStruct.sol": "importedStruct"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Structs.sol": {
+			"keccak256": "0x5cfa564b7d1ff2966e0325915929be5bdc5c017a1e57bf5dc16286f84b2dbd2b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://345a394adfbe44b14f5226422fb76fc8cff8d22d9a3e6e387f0c43d4379c5d60",
+				"dweb:/ipfs/Qmcd1SW31EWAbmdj75oeZE9XVSZ3yQoBkqJSof78JgFxAp"
+			]
+		},
+		"contracts/importedStruct.sol": {
+			"keccak256": "0xc291b847252835d474063cf02902b00ffca2844724fa633b5c23f5431f56e895",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b50c8baeb60632842045207dc7fef4ad5847ed40be6b16535e09f9813676a160",
+				"dweb:/ipfs/QmTGsqmM41cBSXRLnCN5X8dvYKFJ2NpvcTTUZ73Rxzme8a"
+			]
+		}
+	},
+	"version": 1
+}

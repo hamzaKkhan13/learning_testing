@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "E"
+			"contracts/Inheritance.sol": "F"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

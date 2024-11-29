@@ -6,29 +6,35 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
 				"inputs": [],
-				"name": "getConstant",
-				"outputs": [
+				"name": "AnotherLog",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": true,
 						"internalType": "address",
-						"name": "",
+						"name": "sender",
 						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
+				"name": "Log",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "myAddr",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
+				"name": "test",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -45,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Constants.sol": "Contstants"
+			"contracts/Events.sol": "Events"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -59,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Constants.sol": {
-			"keccak256": "0x6689370e0cf018394c60e30ffc7e8fe999954f4c3ab89b8fbbb3a7ed0f4c4a7b",
+		"contracts/Events.sol": {
+			"keccak256": "0x0eb573fe0ae7b6c1ac8d273e0eb5a95817af03b53c6cf568c392bcafeaba25fb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://691914375be005426338752c29f8efb3ce48a096c23aa7ec34b86a028b26a353",
-				"dweb:/ipfs/QmfJmxCheLjM3RUN9Z5BcH5yMSeAqSa9q3tazMWaw9EgGr"
+				"bzz-raw://3a17e86a6d9384a43d4601ccc9e9c703b7291b9dfb65f4c8ee4b1d4069b8078e",
+				"dweb:/ipfs/QmRBV36sQUGfc3TBfUJ5AWrAribZy1EiNzVodtzBqfts4S"
 			]
 		}
 	},

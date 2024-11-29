@@ -51,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SuperFunction.sol": "B"
+			"contracts/SuperFunction.sol": "A"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

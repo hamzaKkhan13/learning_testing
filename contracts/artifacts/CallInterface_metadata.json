@@ -7,15 +7,28 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "foo",
+				"name": "count",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_counter",
+						"type": "address"
+					}
+				],
+				"name": "example",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "E"
+			"contracts/InterfaceV2.sol": "CallInterface"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,12 +59,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inheritance.sol": {
-			"keccak256": "0x1fea885a74fe4a70c761961cf49c010b3dd12c9fa4d8c3e9da28a334874266c3",
+		"contracts/InterfaceV2.sol": {
+			"keccak256": "0x7961e8b67e681c3340cbf071c546d5601ca9eb7da72a40d441a727b57ad11a31",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79b2e1df360aa75409060cade732c71235f1f3f545502564c99993d93a7f0ff4",
-				"dweb:/ipfs/QmdcPoPUzW6poCFVkXHS6LDJtxAu3rFQ4Wso1NQvdrQ3eq"
+				"bzz-raw://954412722a462f9604c6e985f0e8e590522267a6d9532bb9f37781ec26e0b30d",
+				"dweb:/ipfs/QmPKjqSY6VUL2Zn67gS9xSaj6qtVuZiG9NZdV79RdwB4Yn"
 			]
 		}
 	},

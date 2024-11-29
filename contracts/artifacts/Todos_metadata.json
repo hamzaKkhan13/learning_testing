@@ -4,21 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"name": "foo",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -32,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Inheritance.sol": "E"
+			"contracts/Structs.sol": "Todos"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -46,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Inheritance.sol": {
-			"keccak256": "0x1fea885a74fe4a70c761961cf49c010b3dd12c9fa4d8c3e9da28a334874266c3",
+		"contracts/Structs.sol": {
+			"keccak256": "0x741b95a4e210ece28bc6425081f8b17bc15d5e315f2a48f8e0331e483b64232b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://79b2e1df360aa75409060cade732c71235f1f3f545502564c99993d93a7f0ff4",
-				"dweb:/ipfs/QmdcPoPUzW6poCFVkXHS6LDJtxAu3rFQ4Wso1NQvdrQ3eq"
+				"bzz-raw://85a91663241bdcdd3e3cc2ea3b86b89fb01ebda47b6ea6795b5ef755a2212eb2",
+				"dweb:/ipfs/QmQmvTqDMYQeDfhWHmFkT2cSRri3fSJscnWvf77mFD5TR4"
 			]
 		}
 	},

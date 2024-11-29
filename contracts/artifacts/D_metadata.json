@@ -6,34 +6,30 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "message",
 						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "bar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "text",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -50,7 +46,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/constructors.sol": "D"
+			"contracts/SuperFunction.sol": "D"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -64,12 +60,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/constructors.sol": {
-			"keccak256": "0xa60c6f6730e0909f1e961e448ae876e0bb9353dae826b647237c78e42fde5834",
+		"contracts/SuperFunction.sol": {
+			"keccak256": "0x56f79f2702e30f9ad8c7566ea9e918a25d4d0af441ce04cb47f5ea7fc181f9f9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3557e348d22af92558040581d7e0f78ebf942307be4686b8e7bbd3c883882181",
-				"dweb:/ipfs/QmfN2mrBwf5CLNRBoLxEFrfznQoTQHLA3PPThQLifrBs2M"
+				"bzz-raw://e57924bdeab351a95d721e6149a6dcad06786f5603ee1e9c142a0d6c5f49d3c0",
+				"dweb:/ipfs/QmPKam36duaoweLuSTx4prr35gp8E64LH8d8sLnnDYqC58"
 			]
 		}
 	},

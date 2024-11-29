@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ImportedEnum.sol": "ImportedEnum"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Enum.sol": {
+			"keccak256": "0xfd7bd06ad46c17bb35513d37162e58315c4bfefb1f01c6fc92618ed7c7eb1d9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5dc7aa8eba0c43ca77a450a5a12b9a2c8d679b31d9b6534a0c068dfc5ad9c3f1",
+				"dweb:/ipfs/QmVEoKjmn9xN3aF7CEMiNwgtqfWth3aau8CbRLPHbRqXXd"
+			]
+		},
+		"contracts/ImportedEnum.sol": {
+			"keccak256": "0x8bec2a63fe816de5e0a4268b4467e3c6295e3dffeaf699d4e7cecb0ef57890f4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f87b83d6af6cf2e606ea19b4d4ae3f5f3b94cce06cffc212318f3c375a966539",
+				"dweb:/ipfs/QmNhQ7F5vSu2iNiNBduE8a4BMjD5TM82SAhcx2jkPgjZpr"
+			]
+		}
+	},
+	"version": 1
+}
