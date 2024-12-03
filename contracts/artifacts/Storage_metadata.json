@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.28+commit.7893614a"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
@@ -76,11 +76,11 @@
 	},
 	"sources": {
 		"contracts/1_Storage.sol": {
-			"keccak256": "0x530a5b88138368b0e4df8257b6b496a6885f9475bbadfbe992bf6c371382025c",
+			"keccak256": "0xb2e1984e995b81d0435bc92c96a8567b7a550b787b0ec736a3c674b3afb1fd40",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ca856245d6265e2ac1b5df8dd20f69f4e56dd0dade2757a8b029597afc3e867c",
-				"dweb:/ipfs/QmX3NAWuuHNfEkBe38rHc257ghqBvgQ3YixRtGtNS6vQ7g"
+				"bzz-raw://2fdfc9fb599d17db05dbf600de0a5daaa53744b261ee253282504461e43ad25c",
+				"dweb:/ipfs/QmVJyy4yPhs59RuAPAdVqv4iRMQUa8Sd7xHFiK73BDj4uo"
 			]
 		}
 	},

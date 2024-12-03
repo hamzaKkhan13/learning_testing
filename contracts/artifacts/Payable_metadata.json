@@ -26,6 +26,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "o1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -91,11 +104,11 @@
 	},
 	"sources": {
 		"contracts/Payable.sol": {
-			"keccak256": "0x5befe9e29bcc99141352f5610cb6988a962b400b2425e36fd14636fc2e870561",
+			"keccak256": "0x7b20184783cde0b2fc3c32e333c760cdeaa59978eb049cfb30fd056b5d8e0f4e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b6798efe2730c78f8b4b96636b34240638ef9f8a165512771cbb6accf2efd02f",
-				"dweb:/ipfs/QmY1GjvHdcFu1ytHdaWvSikGduTsgVAk6Fo94ZPSffhZ7s"
+				"bzz-raw://8991dd5fd8734c6c4aec3125dd019f0fb2b1e55e5c2e5d6db844abf6026bbf81",
+				"dweb:/ipfs/QmPvYcdP7mH4hcwFs7r5kNsUYyi5oUygk61NL7GX4erALV"
 			]
 		}
 	},
