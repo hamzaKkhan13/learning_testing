@@ -2,40 +2,53 @@
 
 pragma solidity ^0.8.0;
 
-import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import "./PriceConverter.sol";
 
 contract FundMe {
+    using PriceConverter for uint256;
 
     uint256 public minimumUsd = 50 * 1e18;
+
+    address public owner;
+
+    constructor () {
+        owner = msg.sender;
+    }
+
+    modifier OnlyOwner() {
+        require(msg.sender == owner);
+        _;
+    }
 
     address[] public funders;
     mapping (address => uint256) public addressToAmountFunded;
 
     function fund() public payable{ 
-        require(getConversionRate(msg.value) >= minimumUsd, "not enough eth");
+        require(msg.value.getConversionRate() >= minimumUsd, "not enough eth");
         funders.push(msg.sender);
         addressToAmountFunded[msg.sender] = msg.value;
     } 
 
-    function getPrice() public view returns (uint256) {
-        // ABI
-        // Address 0x694AA1769357215DE4FAC081bf1f309aDC325306
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
-        //gets price of ETH in USD
-        (,int256 price,,,) = priceFeed.latestRoundData();
-        return uint256(price * 1e10);
+    function withdrawAll() public OnlyOwner {
+        // require(msg.sender == owner, "Sender is not owner");
+        address funder;
+        for(uint i = 0; i < funders.length; i++){
+            funder = funders[i];
+            addressToAmountFunded[funder] = 0;
+        }
+
+        funders = new address[](0);
+
+        // //transfer ETH from function caller to THIS contract
+        // payable(msg.sender).transfer(address(this).balance);
+
+        // //send transfer ETH from function caller to THIS contract
+        // bool sendSucess = payable(msg.sender).send(address(this).balance);
+        // require(sendSucess, "Failed to send");
+
+        //call -- lower level command
+        (bool callsuccess, /*bytes memory dataReturned*/ ) =payable(msg.sender).call{value: address(this).balance}("");
+        require(callsuccess, "Failed to call");
+
     }
-
-    function getConversionRate(uint256 _ethAmount) view public returns (uint256) {
-        uint256 ethPrice = getPrice();
-        // uint256 ethAmountInUSD = (ethPrice * _ethAmount) / 1e18 
-        return ((ethPrice * _ethAmount) / 1e18) ;
-    }
-
-    function getVersion() public view returns(uint256) {
-        AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
-        return priceFeed.version();
-   }
-
-    //function withdraw() { }
-}
+} 
