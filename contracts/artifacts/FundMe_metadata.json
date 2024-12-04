@@ -11,6 +11,28 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "NotOwner",
+				"type": "error"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "MINUMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -57,20 +79,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "minimumUsd",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
+				"name": "i_owner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -87,6 +96,23 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -125,11 +151,11 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x4f1c54afdc074b0118b3d95cc1bb99e28a34f586808569ec78861fab94278899",
+			"keccak256": "0x56c26782ccdc803dc82391452a891503a7313ede6a8d5349ba8cfd954159be15",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1de7420404ab73b57217bab979841a35fb782854f56307567f249994118269f",
-				"dweb:/ipfs/QmRW4vjDgYDz5NEfBiGzTmdY3QzLX1PgYS7GbKGSkKB7RX"
+				"bzz-raw://2697ccaf3910bbd755aad4397f3cd2121dc44ee9a8b78a8cab309a4805bcd5cf",
+				"dweb:/ipfs/QmfPyFan6PuM937e6ZFu4hXyPj4GJdfzL55UWoNDEGKFAY"
 			]
 		},
 		"contracts/PriceConverter.sol": {
