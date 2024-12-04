@@ -6,8 +6,14 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "count",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "list",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -20,16 +26,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "dec",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "inc",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "maxProfit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -46,7 +51,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/CounterContract.sol": "Counter"
+			"contracts/maxProfit.sol": "MaxProfit"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -60,12 +65,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/CounterContract.sol": {
-			"keccak256": "0xd9b053a710c66a169f95595480776db1395d7efefc1014ee8074317ebe7a25b0",
+		"contracts/maxProfit.sol": {
+			"keccak256": "0xb69dedc92301c494d4be08fa6efb49fc50b3fb98a1a867ea3d630fbd7dab429d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7c6d1d87edc5a472970959f548801d309b527f26a0078b24eb402efb52991689",
-				"dweb:/ipfs/QmW97KJttWcGnk22gbxbM2WMussUPAL8T7nDfVZtJbAPfL"
+				"bzz-raw://c168d27ed630991248f47249e5187232340ba81805412aa9dc120a0a752617f9",
+				"dweb:/ipfs/QmQamMSUNns5RqjvSgXg8eaQEDsyhCki9vRtH7TMnxpVyt"
 			]
 		}
 	},

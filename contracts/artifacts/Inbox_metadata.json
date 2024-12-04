@@ -17,16 +17,21 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "getMessage",
-				"outputs": [
+				"inputs": [
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"name": "doMath",
+				"outputs": [],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -84,11 +89,11 @@
 	},
 	"sources": {
 		"contracts/Inbox.sol": {
-			"keccak256": "0xc8e45193cf0cf7d29e7f6bfed80b4e6d32ca664662d7007a77e50986f8f58599",
+			"keccak256": "0x507a7af32504f9f271f15b683c03d9b5d4a4b12cc99a33765e101cadd954eb76",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0f134cf838efba8ab444775c9fcd654e2d2420f95b596fc344cb0536325245ef",
-				"dweb:/ipfs/QmbbFSBzPBnHWenk2zFpaKe29viqWY6F1yerA8muZiaxeG"
+				"bzz-raw://7d2fa8d3dde57807b8d42d1e01f08b047b1ff37634355bc078375cd93a3895c3",
+				"dweb:/ipfs/QmNog5FxS5uoUJqhgHrjg3kFosWcj3swxq99JesRScb7G2"
 			]
 		}
 	},

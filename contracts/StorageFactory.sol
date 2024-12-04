@@ -7,11 +7,12 @@ import "./SimpleStorage.sol";
 contract StorageFactory {
     
     SimpleStorage[] public simpleStorageArray;
+    //SimpleStorage public simpleStorage;           -- Created to check address of the bew item
 
     function createSimpleStorageContract () public {
 
-        SimpleStorage simpleStorage = new SimpleStorage();
-        simpleStorageArray.push(simpleStorage);
+        SimpleStorage _simpleStorage = new SimpleStorage();
+        simpleStorageArray.push(_simpleStorage);
 
     }
 
@@ -21,6 +22,8 @@ contract StorageFactory {
 
     function sfGet(uint256 _simpleStorageIndex) public view returns (uint256){
         return simpleStorageArray[_simpleStorageIndex].retrieve();
-
     }
+
+    
+    
 }
